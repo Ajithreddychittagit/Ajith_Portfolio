@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajith Reddy Chitta | Gen AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            transform: scale(1.05);
+            background: rgba(102, 126, 234, 0.2);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        .grid-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-display font-bold text-2xl tracking-tighter text-white">
+                Ajith<span class="text-indigo-400">.</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-indigo-400 transition-colors text-sm font-medium">About</a>
+                <a href="#experience" class="hover:text-indigo-400 transition-colors text-sm font-medium">Experience</a>
+                <a href="#skills" class="hover:text-indigo-400 transition-colors text-sm font-medium">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors text-sm font-medium">Projects</a>
+                <a href="#contact" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-full text-sm font-medium transition-all">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-white/10">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#about" class="block hover:text-indigo-400">About</a>
+                <a href="#experience" class="block hover:text-indigo-400">Experience</a>
+                <a href="#skills" class="block hover:text-indigo-400">Skills</a>
+                <a href="#projects" class="block hover:text-indigo-400">Projects</a>
+                <a href="#contact" class="block text-indigo-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 grid-pattern">
+        <div class="absolute inset-0 bg-gradient-to-b from-indigo-900/20 via-transparent to-slate-950"></div>
+        <div class="absolute top-20 right-20 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl float-animation"></div>
+        <div class="absolute bottom-20 left-20 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl float-animation" style="animation-delay: 2s;"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-sm font-medium">
+                Gen AI Engineer & ML Specialist
+            </div>
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Building <span class="gradient-text">Intelligent Systems</span><br>
+                That Transform Industries
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                3+ years architecting enterprise AI solutions across healthcare, telecom, and financial analytics. 
+                Specializing in RAG pipelines, multi-agent orchestration, and compliant AI deployment.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#experience" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-full font-medium transition-all hover:scale-105 flex items-center gap-2">
+                    View Experience <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="mailto:ajithreddychitta576@gmail.com" class="px-8 py-4 border border-white/20 hover:border-indigo-400 rounded-full font-medium transition-all hover:bg-white/5">
+                    Get in Touch
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-8 text-slate-400">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i>
+                    <span class="text-sm">Ashburn, Virginia</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4 text-indigo-400"></i>
+                    <span class="text-sm">ajithreddychitta576@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4 text-indigo-400"></i>
+                    <span class="text-sm">+1 813-453-2067</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 border-y border-white/5 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-display font-bold text-white mb-2">3+</div>
+                    <div class="text-slate-400 text-sm">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-display font-bold text-white mb-2">3</div>
+                    <div class="text-slate-400 text-sm">Enterprise AI Platforms</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-display font-bold text-white mb-2">3</div>
+                    <div class="text-slate-400 text-sm">Industries Served</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-display font-bold text-white mb-2">15+</div>
+                    <div class="text-slate-400 text-sm">AI Technologies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display text-4xl font-bold mb-6 text-white">Professional Summary</h2>
+                    <div class="space-y-4 text-slate-400 leading-relaxed">
+                        <p>
+                            Gen AI Engineer with extensive experience supporting AI-driven products and data platforms across 
+                            <span class="text-indigo-400 font-medium">healthcare</span>, 
+                            <span class="text-indigo-400 font-medium">telecom</span>, and 
+                            <span class="text-indigo-400 font-medium">financial analytics</span> domains.
+                        </p>
+                        <p>
+                            Currently contributing to enterprise generative AI initiatives including retrieval-augmented generation (RAG), 
+                            document-centric AI workflows, and conversational intelligence platforms such as 
+                            <span class="text-purple-400 font-medium">Seismic</span>, 
+                            <span class="text-purple-400 font-medium">Data Coffee</span>, and 
+                            <span class="text-purple-400 font-medium">SurroundAI</span>.
+                        </p>
+                        <p>
+                            Strong working proficiency in Python programming, requirement management, and daily execution tracking 
+                            using Agile practices. Experienced in document processing, vector-based retrieval, LLM API integration, 
+                            and compliance-aware AI development within regulated environments.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 flex gap-4">
+                        <a href="https://www.linkedin.com/in/ajith-reddy-b6741330b/" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-blue-400"></i>
+                            <span class="text-sm">LinkedIn</span>
+                        </a>
+                        <div class="flex items-center gap-2 px-4 py-2 bg-slate-800 rounded-lg">
+                            <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
+                            <span class="text-sm">OutSkill Gen AI Certified</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
+                    <div class="relative glass-card rounded-2xl p-8 space-y-6">
+                        <h3 class="font-display text-xl font-semibold text-white mb-4">Core Competencies</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="brain" class="w-5 h-5 text-indigo-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white mb-1">Generative AI & LLMs</h4>
+                                    <p class="text-sm text-slate-400">RAG pipelines, GPT-4/3.5 integration, multi-agent orchestration</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="database" class="w-5 h-5 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white mb-1">Data Engineering</h4>
+                                    <p class="text-sm text-slate-400">ETL/ELT pipelines, vector databases, cloud data platforms</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="shield" class="w-5 h-5 text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white mb-1">Compliance & Governance</h4>
+                                    <p class="text-sm text-slate-400">HIPAA/PHI handling, GDPR/CCPA, Responsible AI practices</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="cloud" class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white mb-1">Cloud Platforms</h4>
+                                    <p class="text-sm text-slate-400">AWS, Azure, GCP deployment and MLOps</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold mb-4 text-white">Professional Experience</h2>
+                <p class="text-slate-400">Enterprise AI development and machine learning engineering</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- LEAPGEN AI -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute left-0 top-0 bottom-0 w-px timeline-line left-1/2 transform -translate-x-1/2"></div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="md:text-right md:pr-12">
+                            <div class="glass-card p-6 rounded-2xl hover-lift">
+                                <div class="flex items-center gap-2 mb-2 md:justify-end">
+                                    <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs font-medium">Current</span>
+                                    <span class="text-slate-500 text-sm">June 2024 - Present</span>
+                                </div>
+                                <h3 class="font-display text-2xl font-bold text-white mb-1">Gen AI Engineer</h3>
+                                <p class="text-indigo-400 font-medium mb-4">LEAPGEN AI - Ashburn, Virginia</p>
+                                <p class="text-slate-400 text-sm mb-4">
+                                    Contributing to SurroundAI, Seismic, and Octopus—enterprise-grade AI platforms powering 
+                                    multi-agent orchestration, generative BI, ambient clinical documentation, and secure RAG-based intelligence.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">LangGraph</span>
+                                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">Azure OpenAI</span>
+                                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">RAG</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:pl-12 space-y-3">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">Multi-agent AI workflows using LangGraph, AutoGen, and LlamaIndex</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">Real-time transcription & clinical documentation with GPT-4 NLP</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">RAG pipelines with document chunking and vector-based retrieval</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-indigo-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">AWS SageMaker & Lambda deployment for ML inference services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VYSHNAVI INFO TECH -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute left-0 top-0 bottom-0 w-px timeline-line left-1/2 transform -translate-x-1/2"></div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="md:order-2 md:pl-12">
+                            <div class="glass-card p-6 rounded-2xl hover-lift">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-slate-500 text-sm">Jan 2021 - Sep 2022</span>
+                                </div>
+                                <h3 class="font-display text-2xl font-bold text-white mb-1">Software Engineer (ML)</h3>
+                                <p class="text-purple-400 font-medium mb-4">VYSHNAVI INFO TECH - Bangalore, India</p>
+                                <p class="text-slate-400 text-sm mb-4">
+                                    Developed personalized financial management platform with intelligent recommendations 
+                                    for spending, saving, and reward optimization using predictive analytics and NLP.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">TensorFlow</span>
+                                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">AWS</span>
+                                    <span class="px-2 py-1 bg-slate-800 rounded text-xs text-slate-300">Fraud Detection</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:order-1 md:pr-12 md:text-right space-y-3">
+                            <div class="flex items-start gap-3 md:flex-row-reverse">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">Python ETL pipelines (AWS Glue → GCP DataFlow)</p>
+                            </div>
+                            <div class="flex items-start gap-3 md:flex-row-reverse">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">Fraud detection & risk analysis with XGBoost</p>
+                            </div>
+                            <div class="flex items-start gap-3 md:flex-row-reverse">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">NLP-driven customer feedback analysis</p>
+                            </div>
+                            <div class="flex items-start gap-3 md:flex-row-reverse">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-slate-300 text-sm">Interactive Dash dashboards with BigQuery integration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold mb-4 text-white">Technical Arsenal</h2>
+                <p class="text-slate-400">Comprehensive toolkit for enterprise AI development</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- AI & ML -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center mb-4">
+                        <i data-lucide="brain-circuit" class="w-6 h-6 text-indigo-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-4">AI & Data Products</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">LangGraph</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">LangChain</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">LlamaIndex</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">AutoGen</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">RAG</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">GPT-4/3.5</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">CrewAI</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">MCP</span>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4">
+                        <i data-lucide="cloud-cog" class="w-6 h-6 text-blue-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-4">Cloud Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">AWS SageMaker</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Azure OpenAI</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Databricks</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">GCP BigQuery</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Lambda</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Kubernetes</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center mb-4">
+                        <i data-lucide="database" class="w-6 h-6 text-green-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-4">Data Engineering</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">PySpark</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Delta Lake</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Airflow</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">ETL/ELT</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">SQL</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- ML Frameworks -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4">
+                        <i data-lucide="cpu" class="w-6 h-6 text-purple-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-4">ML Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">TensorFlow</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">PyTorch</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Scikit-learn</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">XGBoost</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">MLflow</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">spaCy</span>
+                    </div>
+                </div>
+
+                <!-- BI & Visualization -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center mb-4">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-orange-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-4">BI & Visualization</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Power BI</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Tableau</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Plotly</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Dash</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">DAX</span>
+                    </div>
+                </div>
+
+                <!-- Governance -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-red-400"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-4">Governance</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">HIPAA/PHI</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">GDPR/CCPA</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">RBAC</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Data Lineage</span>
+                        <span class="skill-tag px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-300 cursor-default">Responsible AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold mb-4 text-white">Featured Projects</h2>
+                <p class="text-slate-400">Enterprise AI platforms and solutions</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- SurroundAI -->
+                <div class="group relative glass-card rounded-2xl overflow-hidden hover-lift">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6 relative">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="network" class="w-7 h-7 text-indigo-400"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white mb-2">SurroundAI</h3>
+                        <p class="text-indigo-400 text-sm font-medium mb-3">Multi-Agent Orchestration Platform</p>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Enterprise-grade AI platform enabling domain-specific agent deployment with coordinated agent-to-agent workflows using LangGraph and AutoGen.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-indigo-500/10 text-indigo-300 rounded">LangGraph</span>
+                            <span class="text-xs px-2 py-1 bg-indigo-500/10 text-indigo-300 rounded">Multi-Agent</span>
+                            <span class="text-xs px-2 py-1 bg-indigo-500/10 text-indigo-300 rounded">Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seismic -->
+                <div class="group relative glass-card rounded-2xl overflow-hidden hover-lift">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6 relative">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="stethoscope" class="w-7 h-7 text-purple-400"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white mb-2">Seismic</h3>
+                        <p class="text-purple-400 text-sm font-medium mb-3">Ambient Clinical Documentation</p>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Real-time transcription and summarization platform for healthcare, leveraging GPT-4 NLP and speech-to-text for clinical documentation workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">GPT-4</span>
+                            <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">NLP</span>
+                            <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Coffee -->
+                <div class="group relative glass-card rounded-2xl overflow-hidden hover-lift">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-6 relative">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i data-lucide="coffee" class="w-7 h-7 text-blue-400"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white mb-2">Data Coffee</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">Generative BI Platform</p>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Conversational analytics platform enabling natural language querying of enterprise data with automated insight generation and visualization.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-blue-500/10 text-blue-300 rounded">Generative BI</span>
+                            <span class="text-xs px-2 py-1 bg-blue-500/10 text-blue-300 rounded">BigQuery</span>
+                            <span class="text-xs px-2 py-1 bg-blue-500/10 text-blue-300 rounded">RAG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Octopus Mention -->
+            <div class="mt-8 glass-card rounded-2xl p-8 text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 rounded-full mb-4">
+                    <i data-lucide="git-branch" class="w-4 h-4 text-slate-400"></i>
+                    <span class="text-sm text-slate-300">Additional Platform</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-2">Octopus</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    Secure RAG-based intelligence platform for telecom and healthcare ecosystems, enabling compliant dataset integration and automated decision workflows.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold mb-4 text-white">Education</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center">
+                            <i data-lucide="graduation-cap" class="w-6 h-6 text-indigo-400"></i>
+                        </div>
+                        <span class="text-sm text-slate-500">2022 - 2024</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-1">MS in Computer Science</h3>
+                    <p class="text-indigo-400 mb-3">Concordia University of Wisconsin</p>
+                    <p class="text-slate-400 text-sm">Milwaukee, WI, USA</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="text-xs px-2 py-1 bg-slate-800 text-slate-300 rounded">Data Engineering</span>
+                        <span class="text-xs px-2 py-1 bg-slate-800 text-slate-300 rounded">Cloud Computing</span>
+                        <span class="text-xs px-2 py-1 bg-slate-800 text-slate-300 rounded">AI Systems Design</span>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
+                            <i data-lucide="school" class="w-6 h-6 text-purple-400"></i>
+                        </div>
+                        <span class="text-sm text-slate-500">2017 - 2021</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-1">Bachelor's in Information Technology</h3>
+                    <p class="text-purple-400 mb-3">St. Mary's Engineering College</p>
+                    <p class="text-slate-400 text-sm">Hyderabad, India</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-2xl">
+                    <i data-lucide="award" class="w-6 h-6 text-yellow-400"></i>
+                    <div class="text-left">
+                        <div class="text-sm text-slate-400">Certification</div>
+                        <div class="text-white font-medium">OutSkill Certified Generative AI Mastermind</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/30 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-indigo-900/10 to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="font-display text-4xl font-bold mb-4 text-white">Let's Build Something Intelligent</h2>
+            <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+                Open to opportunities in Gen AI, machine learning engineering, and enterprise AI platform development.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="mailto:ajithreddychitta576@gmail.com" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-full font-medium transition-all hover:scale-105 flex items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    Send Email
+                </a>
+                <a href="https://www.linkedin.com/in/ajith-reddy-b6741330b/" target="_blank" class="px-8 py-4 border border-white/20 hover:border-indigo-400 rounded-full font-medium transition-all hover:bg-white/5 flex items-center gap-2">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="glass-card rounded-2xl p-8 max-w-2xl mx-auto">
+                <div class="grid sm:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <i data-lucide="mail" class="w-6 h-6 text-indigo-400 mx-auto mb-2"></i>
+                        <div class="text-sm text-slate-400 mb-1">Email</div>
+                        <a href="mailto:ajithreddychitta576@gmail.com" class="text-white hover:text-indigo-400 transition-colors text-sm">
+                            ajithreddychitta576@gmail.com
+                        </a>
+                    </div>
+                    <div>
+                        <i data-lucide="phone" class="w-6 h-6 text-indigo-400 mx-auto mb-2"></i>
+                        <div class="text-sm text-slate-400 mb-1">Phone</div>
+                        <a href="tel:+18134532067" class="text-white hover:text-indigo-400 transition-colors text-sm">
+                            +1 (813) 453-2067
+                        </a>
+                    </div>
+                    <div>
+                        <i data-lucide="map-pin" class="w-6 h-6 text-indigo-400 mx-auto mb-2"></i>
+                        <div class="text-sm text-slate-400 mb-1">Location</div>
+                        <span class="text-white text-sm">Ashburn, Virginia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/5 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>© 2024 Ajith Reddy Chitta. Built with modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.add('bg-slate-950/95');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.remove('bg-slate-950/95');
+                nav.classList.add('bg-slate-950/80');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.glass-card').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
